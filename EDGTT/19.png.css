@@ -9,7 +9,7 @@
 
 .xbox .button {
     position: absolute;
-    background: url(abxymod.png);
+    background: url(stickmod.png);
     width: 48px;
     height: 48px;
 }
@@ -73,3 +73,4 @@
     top: 113px;
     left: 288px;
 }
+

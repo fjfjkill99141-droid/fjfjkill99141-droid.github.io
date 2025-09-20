@@ -1,17 +1,22 @@
-/*BEGIN Xbox One Controller Styling*/
+/* ===== Xbox One Controller Styling ===== */
 .controller.xbox {
-    background: url(Basemod.png);
+    background: url(final4.png) no-repeat center center;
+    background-size: contain;
     height: 630px;
     width: 750px;
-    /*    margin-left: -375px;
-        margin-top: -285px;*/
+    position: relative;
+    margin: 0 auto;
 }
 
+/* ===== Buttons Styling ===== */
 .xbox .button {
     position: absolute;
-    background: url(abxymod.png);
+    background: url(final2.png) no-repeat;
+    background-size: 192px 48px; /* أربعة أزرار كل واحد 48px */
     width: 48px;
     height: 48px;
+    opacity: 0.9;
+    transition: all 0.2s ease-in-out;
 }
 
 .xbox .button.pressed {
@@ -20,6 +25,7 @@
     opacity: 1;
 }
 
+/* ===== Button Positions ===== */
 .xbox .a {
     background-position: 0 0;
     top: 108px;
@@ -39,11 +45,12 @@
 }
 
 .xbox .y {
-    background-position: 48px 0;
+    background-position: -147px 0;
     left: 55px;
     top: 7px;
 }
 
+/* ===== Sticks Area ===== */
 .xbox .sticks {
     position: absolute;
     width: 371px;
@@ -54,14 +61,17 @@
 
 .xbox .stick {
     position: absolute;
-    background: url(stickmod.png);
-    background-position: -85px 0;
+    background: url(final2.png) no-repeat;
+    background-position: -85px 0; /* صورة العصا */
+    background-size: 170px 83px;
     height: 83px;
     width: 83px;
+    transition: transform 0.15s ease;
 }
 
 .xbox .stick.pressed {
     background-position: 0 0;
+    transform: scale(0.95);
 }
 
 .xbox .stick.left {
@@ -72,5 +82,4 @@
 .xbox .stick.right {
     top: 113px;
     left: 288px;
-
 }
